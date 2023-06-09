@@ -42,28 +42,36 @@
         .preloader__image.pulse-effect {
             animation: pulse-effect 1.5s infinite;
         }
+
+        /* Hide the preloader initially */
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
-    <img src="ProseBot.svg" alt="Loading..." class="preloader__image pulse-effect">
+    <div id="preloader" class="hidden">
+        <img src="ProseBot.svg" alt="Loading..." class="preloader__image pulse-effect">
+    </div>
 
     <script>
         // Check if the page is loading for the first time or returning from index.html
         if (!sessionStorage.getItem('redirected')) {
+            // Show the preloader initially
+            document.getElementById('preloader').classList.remove('hidden');
             // Redirect to index.html after a delay
             setTimeout(function() {
                 // Set a flag in session storage to indicate redirection
                 sessionStorage.setItem('redirected', true);
                 // Redirect to index.html
                 window.location.href = 'index.html';
-            }, 4000); // Adjust the timeout value (in milliseconds) to match your desired delay
+            }, 3000); // Adjust the timeout value (in milliseconds) to match your desired delay
         } else {
             // Clear the flag in session storage
             sessionStorage.removeItem('redirected');
         }
     </script>
 </body>
-
 </html>
 
