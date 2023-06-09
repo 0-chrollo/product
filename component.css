@@ -1,0 +1,100 @@
+/*  
+
+
+
+<div class="container">
+    <div class="what-is">
+        <h2 class="icon-underline" style="color: rgb(53, 53, 53);">Marketing</h2>
+        <p>When it comes to marketing, ProseBot is your ultimate ally. With its advanced writing capabilities and deep understanding of persuasive language, ProseBot can assist you in creating compelling marketing materials. From catchy slogans to engaging social media posts, ProseBot can help you craft content that grabs attention, resonates with your target audience, and drives results. Let ProseBot be your secret weapon in the world of marketing and watch your campaigns soar to new heights.<p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="what-is">
+        <h2 class="icon-underline" style="color: rgb(53, 53, 53);">Assignments</h2>
+        <p>Say goodbye to the stress of assignment writing with ProseBot by your side. ProseBot can provide accurate and well-researched information to help you ace your assignments. Whether you need assistance with research papers, essays, or presentations, ProseBot can guide you through the process and ensure your work is of the highest quality. With ProseBot's expertise, you can tackle any assignment with confidence and achieve academic success.<p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="what-is">
+        <h2 class="icon-underline" style="color: rgb(53, 53, 53);">Emails</h2>
+        <p>Crafting effective emails can be a challenging task, but with ProseBot, it becomes a breeze. ProseBot can assist you in writing professional and persuasive emails, whether you're reaching out to potential clients, networking with industry professionals, or applying for a job. It can help you convey your message concisely, highlight your skills and qualifications, and leave a positive impression. Let ProseBot streamline your email communication and ensure your messages are impactful and well-received.<p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="what-is">
+        <h2 class="icon-underline" style="color: rgb(53, 53, 53);">Paraphrasing</h2>
+        <p>Paraphrasing is an essential skill, and ProseBot has mastered it to perfection. With its advanced AI capabilities, ProseBot can paraphrase text in a way that is indistinguishable from human paraphrasing. It can retain the meaning and context while delivering a fresh and unique perspective. Whether you need to rephrase an article, academic content, or any other text, ProseBot can help you create original and plagiarism-free content that is undetectable as AI-generated. Let ProseBot be your go-to tool for seamless and authentic paraphrasing.<p>
+    </div><br>
+</div>
+
+</section>
+<style>
+.container {
+    position: relative;
+    width: 75%; 
+    margin: auto; 
+    margin-top: 50px;
+}
+
+.what-is {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px; 
+    background-color: #ffffff;
+    border: 2.5px solid rgb(208, 206, 206);
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.what-is h2 {
+    display: flex;
+    align-items: center;
+}
+
+.what-is::before {
+    content: '\f15c'; 
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    color: rgb(6, 6, 75);
+    width: 70px;
+    border: 2.5px solid rgb(208, 206, 206);
+    height: 70px;
+    background-color: #fefefe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    animation: pulsy 2s infinite; 
+}
+@keyframes pulsy {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+</style>
+
+
+
+
+
+*/
