@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="4.4; url=index.html"> <!-- Wait for 4 seconds before redirecting -->
     <title>ProseBot..</title>
     <style>
         /* Add your pre-loader styles here */
@@ -48,6 +47,23 @@
 
 <body>
     <img src="ProseBot.svg" alt="Loading..." class="preloader__image pulse-effect">
+
+    <script>
+        // Check if the page is loading for the first time or returning from index.html
+        if (!sessionStorage.getItem('redirected')) {
+            // Redirect to index.html after a delay
+            setTimeout(function() {
+                // Set a flag in session storage to indicate redirection
+                sessionStorage.setItem('redirected', true);
+                // Redirect to index.html
+                window.location.href = 'index.html';
+            }, 4000); // Adjust the timeout value (in milliseconds) to match your desired delay
+        } else {
+            // Clear the flag in session storage
+            sessionStorage.removeItem('redirected');
+        }
+    </script>
 </body>
+
 </html>
 
