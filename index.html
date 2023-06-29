@@ -116,18 +116,18 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="fullscreen-svg">
             <image href="main.svg" width="100%" height="100%" />
         </svg>
-
-        <button style="position: absolute; left: 271px; top: 72%; transform: translateY(-50%); background-color: darkblue; color: white; border-radius: 23px; padding: 15px 30px; font-size: 14px; animation: pulse 1s infinite;">
+xo
+        <button style="position: absolute; left: 272px; top: 72%; transform: translateY(-50%); background-color: darkblue; color: white; border-radius: 23px; padding: 15px 30px; font-size: 14px; animation: pulse 1s infinite;">
             <i class="fas fa-comment"></i> Chat
         </button>
         
-        <button style="position: absolute; left: 271px; top: 100%; transform: translateY(-50%); background-color: darkblue; color: white; border-radius: 23px; padding: 15px 30px; font-size: 13px; animation: pulse 1.5s infinite;">
+        <button style="position: absolute; left: 272px; top: 100%; transform: translateY(-50%); background-color: darkblue; color: white; border-radius: 23px; padding: 15px 30px; font-size: 13px; animation: pulse 1.5s infinite;">
             <i class="fa fa-book"></i>  Learn
         </button>
         
         <!-- <i class="fa fa-pencil-square-o"-->
 
-            <button style="position: absolute; left: 271px; top: 126%; transform: translateY(-50%); background-color: darkblue; color: white; border-radius: 23px; padding: 15px 30px; font-size: 13px; animation: pulse 1.5s infinite;">
+            <button style="position: absolute; left: 272px; top: 126%; transform: translateY(-50%); background-color: darkblue; color: white; border-radius: 23px; padding: 15px 30px; font-size: 13px; animation: pulse 1.5s infinite;">
                 <i class="fas fa-pencil-alt"></i> Create
             </button>
             
@@ -251,35 +251,35 @@ h2 {
 <section style="background-color: #f4f4f462; margin-top: 40px;">
     <div class="container">
         <div class="what-is slide-in-from-left-animation">
-            <h2 class="icon-underline" style="color: rgb(53, 53, 53);">Cover Letters</h2>
+            <h2 class="topic-underline" style="color: rgb(53, 53, 53);">Cover Letters</h2>
             <p>ProseBot is your ultimate companion for crafting compelling, tailored cover letters. With advanced writing capabilities, ProseBot creates professional, captivating letters that showcase your skills and leave a lasting impression. Trust ProseBot to help you stand out from the competition with expertly crafted cover letters for any job or opportunity.</p>
         </div>
     </div>
 
     <div class="container">
         <div class="what-is marketing slide-in-from-left-animation">
-            <h2 class="icon-underline" style="color: rgb(53, 53, 53);">Marketing</h2>
+            <h2 class="topic-underline" style="color: rgb(53, 53, 53);">Marketing</h2>
             <p>When it comes to marketing, ProseBot is your ultimate ally. With its advanced writing capabilities and deep understanding of persuasive language, ProseBot can assist you in creating compelling marketing materials. From catchy slogans to engaging social media posts, ProseBot can help you craft content that grabs attention, resonates with your target audience, and drives results. Let ProseBot be your secret weapon in the world of marketing and watch your campaigns soar to new heights.<p>
         </div>
     </div>
 
     <div class="container">
         <div class="what-is assignments slide-in-from-left-animation">
-            <h2 class="icon-underline" style="color: rgb(53, 53, 53);">Assignments</h2>
+            <h2 class="topic-underline" style="color: rgb(53, 53, 53);">Assignments</h2>
             <p>Say goodbye to the stress of assignment writing with ProseBot by your side. ProseBot can provide accurate and well-researched information to help you ace your assignments. Whether you need assistance with research papers, essays, or presentations, ProseBot can guide you through the process and ensure your work is of the highest quality. With ProseBot's expertise, you can tackle any assignment with confidence and achieve academic success.<p>
         </div>
     </div>
 
     <div class="container">
         <div class="what-is emails slide-in-from-left-animation">
-            <h2 class="icon-underline" style="color: rgb(53, 53, 53);">Emails</h2>
+            <h2 class="topic-underline" style="color: rgb(53, 53, 53);">Emails</h2>
             <p>Crafting effective emails can be a challenging task, but with ProseBot, it becomes a breeze. ProseBot can assist you in writing professional and persuasive emails, whether you're reaching out to potential clients, networking with industry professionals, or applying for a job. It can help you convey your message concisely, highlight your skills and qualifications, and leave a positive impression. Let ProseBot streamline your email communication and ensure your messages are impactful and well-received.<p>
         </div>
     </div>
 
     <div class="container">
         <div class="what-is paraphrasing slide-in-from-left-animation">
-            <h2 class="icon-underline" style="color: rgb(53, 53, 53);">Paraphrasing</h2>
+            <h2 class="topic-underline" style="color: rgb(53, 53, 53);">Paraphrasing</h2>
             <p>Paraphrasing is an essential skill, and ProseBot has mastered it to perfection. With its advanced AI capabilities, ProseBot can paraphrase text in a way that is indistinguishable from human paraphrasing. It can retain the meaning and context while delivering a fresh and unique perspective. Whether you need to rephrase an article, academic content, or any other text, ProseBot can help you create original and plagiarism-free content that is undetectable as AI-generated. Let ProseBot be your go-to tool for seamless and authentic paraphrasing.<p>
         </div>
     </div>
@@ -456,13 +456,67 @@ content: '\f044'; /* FontAwesome pencil-alt icon code */
         });
         </script>
      
-     
+    <style>
+
+.topic-underline {
+    position: relative;
+    white-space: nowrap;
+    animation: float 1.2s ease-in-out infinite;
+    
+}
+
+.topic-underline:after {
+    content: '';
+    position: absolute; 
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #050d7c;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    animation: underline 2s infinite;
+}
+@keyframes topic-underline {
+    0% {
+        transform: scaleX(0);
+        transform-origin: bottom left;
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    50.01%, 100% {
+        transform: scaleX(1);
+        transform-origin: bottom right;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+}
+
+
+
+
+
+
+
+
+    </style>
 
      <section class="do">
 
 
         <h1 align="center">Prosebot</h1>
      </section>
+
+
+
+
+
+
 
 </body>
 
